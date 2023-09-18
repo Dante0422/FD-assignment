@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_loginFragment_to_signUpFragment" type="id" />
+    <item name="action_loginFragment_to_donorsHomeFragment" type="id" />
+    <item name="action_donationsFragment_to_donorLocationFragment" type="id" />
+    <item name="action_splashFragment_to_donorsHomeFragment" type="id" />
+    <item name="action_receiveFragment_to_donorLocationFragment" type="id" />
+    <item name="action_donorsHomeFragment_to_loginFragment" type="id" />
+    <item name="action_donorsHomeFragment_to_donateFragment" type="id" />
+    <item name="action_donorsHomeFragment_to_historyFragment" type="id" />
+    <item name="action_donorsHomeFragment_to_aboutUsFragment" type="id" />
+    <item name="action_donorsHomeFragment_to_contactUsFragment" type="id" />
+    <item name="action_homeFragment_to_loginFragment" type="id" />
+    <item name="action_homeFragment_to_donationsFragment" type="id" />
+    <item name="action_homeFragment_to_aboutUsFragment2" type="id" />
+</resources>

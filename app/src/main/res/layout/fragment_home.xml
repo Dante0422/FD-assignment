@@ -20,7 +20,7 @@
             android:layout_gravity="center"
             android:orientation="horizontal">
 
-            <!--<com.google.android.material.card.MaterialCardView
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardDonate"
                 android:clickable="true"
                 android:layout_width="160dp"
@@ -45,33 +45,35 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="130dp"
                     android:layout_gravity="center_horizontal" />
-            </com.google.android.material.card.MaterialCardView>-->
+            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardReceive"
-                android:clickable="true"
-                android:layout_width="160dp"
+                android:layout_width="152dp"
                 android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
                 app:strokeColor="@color/orange"
-                app:strokeWidth="1dp"
-                android:layout_margin="10dp"
-                android:focusable="true">
+                app:strokeWidth="1dp">
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_receive"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_receive" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Receive"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginTop="130dp"
-                    android:layout_gravity="center_horizontal"/>
+                    android:text="Receive"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView

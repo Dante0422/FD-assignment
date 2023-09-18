@@ -1,4 +1,4 @@
-package edu.puo.foodonus.activities
+package com.example.fd_assignment.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -19,15 +19,15 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.fd_assignment.R
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+
+import com.example.fd_assignment.R
+
+import com.example.fd_assignment.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
-
-
-import com.example.fd_assignment.ActivityMainBinding
 import com.example.fd_assignment.repository.RepositoryImpl
 import kotlinx.coroutines.launch
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.homeFragment,
                 R.id.adminHomeFragment,
-                R.id.donorsHomeFragment
+                R.id.donorHomeFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             if (destination.id in listOf(
                     R.id.donateFragment,
                     R.id.receiveFragment,
-                    R.id.donationsFragment,
+                    R.id.donationFragment,
                     R.id.foodMapFragment,
                     R.id.historyFragment,
                     R.id.aboutUsFragment,
@@ -88,10 +88,10 @@ class MainActivity : AppCompatActivity() {
         val userImage = auth.currentUser?.photoUrl
         lifecycleScope.launch {
             whenCreated {
-                RepositoryImpl.getInstance().getCurrentUserEmail {
-                    val userEmailText = header.findViewById<android.widget.TextView>(R.id.useremail)
-                    userEmailText.text = it
-                }
+               RepositoryImpl.getInstance().getCurrentUserEmail {
+                   val userEmailText = header.findViewById<android.widget.TextView>(R.id.useremail)
+                   userEmailText.text = it
+               }
             }
         }
 
@@ -152,6 +152,7 @@ class MainActivity : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
