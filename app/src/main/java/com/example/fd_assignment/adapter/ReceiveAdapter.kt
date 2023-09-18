@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.example.fd_assignment.R
 import com.example.fd_assignment.databinding.ReceiveRowLayoutBinding
-import fragments.receive.ReceiveFragmentDirections
+import com.example.fd_assignment.fragments.receive.ReceiveFragmentDirections
 import com.example.fd_assignment.model.Donation
 import com.example.fd_assignment.repository.MainRepository
 import javax.inject.Inject

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fd_assignment.R
 import com.example.fd_assignment.databinding.DonationsRowLayoutBinding
-import fragments.donations.DonationsFragmentDirections
+import com.example.fd_assignment.fragments.donations.DonationsFragmentDirections
 import com.example.fd_assignment.model.Donation
 
 class HistoryAdapter : ListAdapter<Donation, HistoryAdapter.DonationsViewHolder>(COMPARATOR) {
